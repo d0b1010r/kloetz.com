@@ -1,0 +1,48 @@
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype supports variations'),
+       url('/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype-variations');
+	font-weight: 100 1000;
+	font-display: swap
+}
+
+body {
+	font-family: "Playfair Display", serif;
+	font-size: 30px;
+	background: #e1ad01;
+	color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height:100vh;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: normal;
+	margin: 20px 0 0 0;
+	padding: 0;
+}
+
+a, a:link, a:visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.wrapper {
+	width: 20em;
+	padding: 1em;
+}
+
+.wrapper *:first-child {
+	margin-top: 0;
+}
