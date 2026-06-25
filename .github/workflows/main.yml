@@ -8,10 +8,29 @@ jobs:
       - name: Get latest code
         uses: actions/checkout@v6
 
-      - name: Sync files
+      - name: Sync files /david
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: kloetz.com
           username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
-          server-dir: httpdocs/test/
+          local-dir: david/
+          server-dir: httpdocs/david/
+
+      - name: Sync files /julia
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: kloetz.com
+          username: ${{ secrets.ftp_user }}
+          password: ${{ secrets.ftp_password }}
+          local-dir: julia/
+          server-dir: httpdocs/julia/
+
+      - name: Sync files /www
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: kloetz.com
+          username: ${{ secrets.ftp_user }}
+          password: ${{ secrets.ftp_password }}
+          local-dir: www/
+          server-dir: httpdocs/www/
