@@ -14,3 +14,4 @@ jobs:
           server: kloetz.com
           username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
+          server-dir: httpdocs/test/
