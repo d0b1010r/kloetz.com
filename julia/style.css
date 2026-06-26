@@ -1,6 +1,7 @@
 body {
 	font-family: "Futura", "Futura PT", "Century Gothic", "Avenir Next", Avenir, system-ui, sans-serif;
 	background: #eee;
+	margin: 0;
 }
 
 * {
